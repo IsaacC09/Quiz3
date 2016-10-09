@@ -4,7 +4,7 @@ public class Triangle {
 	private double side1;
 	private double side2;
 	private double side3;
-
+ 
 	double s = (side1 + side2 + side3) / 2;
 	public Triangle() { 
 		super();
@@ -51,8 +51,9 @@ public class Triangle {
 	}
 
 	@Override
-	public String toString() {		
-		return super.toString();
+	public String toString(Triangle t) {	
+		x= ("This traingle has area " + t.getArea() + " and periemter " + t.getPerimeter() ".");
+		return super.toString(x);
 		
 	}
 

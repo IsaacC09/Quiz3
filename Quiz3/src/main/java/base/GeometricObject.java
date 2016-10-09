@@ -31,7 +31,7 @@ public abstract class GeometricObject {
    *  the get method is named isFilled */
   public boolean isFilled() {
     return filled;
-  }
+  } 
 
   /** Set a new filled */
   public void setFilled(boolean filled) {

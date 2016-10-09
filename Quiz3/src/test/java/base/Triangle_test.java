@@ -17,15 +17,15 @@ public class Triangle_test {
 		@Test
 		public void test2() throws TriangleException{
 			Triangle tri_2 = new Triangle(3, 4, 5);
-			String x = tri_2.toString();
+			
 			
 			assertEquals(tri_2.getArea(),6,0);
 			assertEquals(tri_2.getPerimeter(),12,0);
 			assertEquals(tri_2.getSide1(),3,0);
 			assertEquals(tri_2.getSide2(),4,0);
 			assertEquals(tri_2.getSide3(),5,0);
-			System.out.println(x);
-			//assertEquals(x, "base.Triangle@46238e3f");
+			
+			assertEquals(tri_2.toString(),"This traingle has area 6 and periemter 12.");
 		}
 
 		@Test(expected=TriangleException.class)
@@ -41,7 +41,7 @@ public class Triangle_test {
 			tri_3.getSide1();
 			
 			
-		 	
+		 	 
 			
 		}
 }
