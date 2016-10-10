@@ -12,7 +12,7 @@ public class Triangle extends GeometricObject {
 		side1 = 1.0;
 		side2 = 1.0;
 		side3 = 1.0;
-	}
+	} 
 
 	/**
 	 * Creates a real triangle
