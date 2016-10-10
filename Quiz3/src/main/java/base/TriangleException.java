@@ -1,5 +1,5 @@
 package base;
- 
+
 public class TriangleException extends Exception {
 	private Triangle t;
 
@@ -11,7 +11,5 @@ public class TriangleException extends Exception {
 	public Triangle getT() {
 		return t;
 	}
-	
-	
+
 }
- 

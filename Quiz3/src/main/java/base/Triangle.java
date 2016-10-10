@@ -1,12 +1,13 @@
 package base;
- 
-public class Triangle {
+
+public class Triangle extends GeometricObject {
 	private double side1;
 	private double side2;
 	private double side3;
- 
+
 	double s = (side1 + side2 + side3) / 2;
-	public Triangle() { 
+
+	public Triangle() {
 		super();
 		side1 = 1.0;
 		side2 = 1.0;
@@ -18,8 +19,8 @@ public class Triangle {
 		this.side1 = side1;
 		this.side2 = side2;
 		this.side3 = side3;
-		
-		if ( ((side1 + side2) >= side3) && ((side3 + side1) >= side2) && ((side2 + side3) >= side1) ) {
+
+		if (((side1 + side2) >= side3) && ((side3 + side1) >= side2) && ((side2 + side3) >= side1)) {
 
 		} else {
 			throw new TriangleException(this);
@@ -39,9 +40,9 @@ public class Triangle {
 	}
 
 	public double getArea() {
-			double s = (side1 + side2 + side3) / 2;
-			double area = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
-			return area;
+		double s = (side1 + side2 + side3) / 2;
+		double area = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
+		return area;
 
 	}
 
@@ -51,16 +52,8 @@ public class Triangle {
 	}
 
 	@Override
-	public String toString(Triangle t) {	
-		x= ("This traingle has area " + t.getArea() + " and periemter " + t.getPerimeter() ".");
-		return super.toString(x);
-		
+	public String toString() {
+		return "This triangle has area " + getArea() + " and perimeter " + getPerimeter() + ".";
 	}
-
-	
-	
-
-
-
 
 }
