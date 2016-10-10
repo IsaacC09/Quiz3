@@ -11,7 +11,7 @@ public class Triangle_test {
 		Triangle tri_1 = new Triangle();
 		assertEquals(tri_1.getArea(), 0.43, 2);
 		assertEquals(tri_1.getPerimeter(), 3, 0);
-	}
+	} 
 
 	@Test
 	public void test2() throws TriangleException {
@@ -22,8 +22,8 @@ public class Triangle_test {
 		assertEquals(tri_2.getSide1(), 3, 0);
 		assertEquals(tri_2.getSide2(), 4, 0);
 		assertEquals(tri_2.getSide3(), 5, 0);
-		System.out.println(tri_2.toString());
-		assertTrue(tri_2.toString() == "This triangle has area 6.0 and perimeter 12.0");
+		
+		assertEquals(tri_2.toString(), "This triangle has side lengths 3.0, 4.0 and 5.0. It's area is 6.0 and perimeter is 12.0.");
 	}
 
 	@Test(expected = TriangleException.class)
